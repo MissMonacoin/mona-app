@@ -2,11 +2,11 @@
 <widget id="org.missmonacoin.monya" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>もにゃ</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
-    </description>
+    A sample Apache Cordova application that responds to the deviceready event.
+  </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
-    </author>
+    Apache Cordova Team
+  </author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -15,8 +15,13 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-intent href="monacoin:*" />
+    <allow-intent href="bitcoin:*" />
+    <allow-intent href="bitzeny:*" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <preference name="StatusBarBackgroundColor" value="#ffeb47" />
         <icon density="ldpi" src="res/icons/android/ldpi.png" />
         <icon density="mdpi" src="res/icons/android/mdpi.png" />
         <icon density="hdpi" src="res/icons/android/hdpi.png" />
@@ -40,6 +45,8 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <preference name="DisallowOverscroll" value="true" />
+        <preference name="BackupWebStorage" value="local" />
+        <preference name="StatusBarStyle" value="default" />
         <icon height="1024" src="res/icons/ios/icon-1024.png" width="1024" />
         <icon height="29" src="res/icons/ios/icon-small.png" width="29" />
         <icon height="58" src="res/icons/ios/icon-small@2x.png" width="58" />
@@ -95,6 +102,7 @@
         <variable name="URL_SCHEME" value="monacoin" />
     </plugin>
     <plugin name="cordova-plugin-inappbrowser" spec="^2.0.1" />
-    <engine name="ios" spec="^4.5.4" />
+    <plugin name="cordova-plugin-statusbar" spec="^2.4.1" />
     <engine name="android" spec="^7.0.0" />
+    <engine name="ios" spec="^4.5.4" />
 </widget>
