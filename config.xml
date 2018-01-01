@@ -19,9 +19,12 @@
     <allow-intent href="bitcoin:*" />
     <allow-intent href="bitzeny:*" />
     <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="StatusBarStyle" value="default" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    
     <platform name="android">
-        <allow-intent href="market:*" />
-        <preference name="StatusBarBackgroundColor" value="#ffeb47" />
+      <allow-intent href="market:*" />
+      <preference name="StatusBarBackgroundColor" value="#fffeb47" />
         <icon density="ldpi" src="res/icons/android/ldpi.png" />
         <icon density="mdpi" src="res/icons/android/mdpi.png" />
         <icon density="hdpi" src="res/icons/android/hdpi.png" />
@@ -46,7 +49,6 @@
         <allow-intent href="itms-apps:*" />
         <preference name="DisallowOverscroll" value="true" />
         <preference name="BackupWebStorage" value="local" />
-        <preference name="StatusBarStyle" value="default" />
         <icon height="1024" src="res/icons/ios/icon-1024.png" width="1024" />
         <icon height="29" src="res/icons/ios/icon-small.png" width="29" />
         <icon height="58" src="res/icons/ios/icon-small@2x.png" width="58" />
